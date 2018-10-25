@@ -1,0 +1,11 @@
+/* CSS Document */
+
+.bg-orange { background-color: #F4A741; }
+.bg-orange a { color: #000; }
+.footer-icon { max-width: 50px; max-height: 50px; margin-bottom: .8em;}
+
+/* These should be part of Bootstrap according to documentation, but they're not in the Bootstrap CSS from Dreamweaver */
+.bg-dark { background-color: #343a40 !important;}
+.text-light { color: #f8f9fa !important;}
+.text-white { color: #fff !important;}
+.p-3 { padding: 1em; }
