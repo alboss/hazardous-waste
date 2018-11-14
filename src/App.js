@@ -71,67 +71,44 @@ class App extends Component {
                 <NavItem>
                   <NavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/css"
+                    to="/households"
                   >
-                    CSS
+                    Households
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/components"
+                    to="/businesses"
                   >
-                    Components
+                    Businesses
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/advanced"
+                    to="/news-events"
                   >
-                    Advanced
+                    News & Events
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/navigation"
+                    to="/language-resources"
                   >
-                    Navigation
+                    Language Resources
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/forms"
+                    to="/customer-service"
                   >
-                    Forms
+                    Customer Service
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/tables"
-                  >
-                    Tables
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/modals"
-                  >
-                    Modals
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                    to="/addons"
-                  >
-                    Addons
-                  </NavLink>
-                </NavItem>   
+                
               </NavbarNav>
             </Collapse>
           </Navbar>
@@ -140,11 +117,81 @@ class App extends Component {
             <Routes />
           </main>
 
-          <Footer color="indigo">
-            <p className="footer-copyright mb-0 py-3 text-center">
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-            </p>
+          <Footer color="black">
+            <div className="container-fluid cyan lighten-4 ">
+              <div className="row p-3">
+                <small>
+                  <div className="text-center col-sm-3 col-lg-offset-3 col-sm-offset-3">
+                    <div className="row text-center">
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-info-circle" aria-hidden="true"></i><br></br>
+                        About us</a>
+                      </div>
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-check-circle-o" aria-hidden="true"></i><br></br>
+                        Accountability</a>
+                      </div>
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i><br></br>
+                        Research</a>
+                      </div>
+                  </div>
+                </div>
+                  <div className="text-center col-sm-3">
+                    <div class="row text-center">
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-globe" aria-hidden="true"></i><br></br>
+                        Policy & Advocacy</a>
+                      </div>
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-wrench" aria-hidden="true"></i><br></br>
+                        Toolkit</a>
+                      </div>
+                      <div className="col-xs-4 text-center">
+                        <a href="#" className="text-dark"><i class="fa fa-3x fa-briefcase" aria-hidden="true"></i><br></br>
+                        Careers</a>
+                      </div>
+                    </div>
+                  </div>
+                </small>
+              </div>
+            </div>
+
+            <div className="row m-3 text-white">
+              <div className="col-md-3">
+                <p>
+                  <img src="/king-county.gif" className="img-fluid" alt="King County"></img>
+                </p>
+                <p className="footer-copyright ml-3 pt-3">
+                  <a href="https://www.kingcounty.gov/about/website/termsofuse"> &copy; King County, WA {new Date().getFullYear()} {" "} </a>
+                </p>
+              </div>
+              <div className="col-md-3">
+                <p>As part of the<br></br>
+                <strong>Local Hazardous Waste Management Program in King County</strong></p>
+                <p>
+                  <address>
+                  130 Nickerson St.<br></br>
+                  Suite 100<br></br>
+                  Seattle WA 98101
+                  </address>
+                  </p>
+              </div>
+              <div className="col-md-3"> 
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Contact us</a></li>
+                  <li><a href="#" class="text-light">Site map</a></li>
+                  <li><a href="#" class="text-light">Terms of service</a></li>
+                  <li><a href="#" class="text-light">Member login</a></li>
+                  <li><a href="#" class="text-light">Toolkit</a></li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <p><strong><a href="#" class="text-light">Household Hazards Line</a></strong><br></br>
+                206-296-4692</p>
+                <p><strong><a href="#" class="text-light">Business Waste Line</a></strong><br></br>
+                206-296-4692</p></div>
+              </div>
           </Footer>
         </div>
       </Router>
